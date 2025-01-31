@@ -1,7 +1,4 @@
-# **Project Name**
-
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
+# **Mini-Games_RL**
 
 A brief description of your project, highlighting its purpose and functionality.
 
@@ -143,3 +140,4 @@ Include images or videos to showcase your project.
 
 - Replace the image URL with the path to your image file or an external URL.
 - Replace the YouTube link with your project's video demonstration URL.
+
