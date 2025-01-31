@@ -116,7 +116,4 @@ mini-games-rl/
 
 This project is a great way to learn about reinforcement learning in gaming applications while experimenting with different algorithms. 🚀
 
-### Example Image
-
-![Example Screenshot](https://github.com/Kane-ouvic/CARLA_Segmentation/blob/main/result/imgs/1.png)
 
