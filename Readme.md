@@ -23,6 +23,9 @@ This project aims to train reinforcement learning models to play two popular gam
 
 The project helps in understanding the effectiveness of different RL techniques for decision-making in sequential game environments.
 
+![Example Screenshot](https://github.com/Kane-ouvic/Mini-games_RL/blob/main/Results/mario.png)
+![Example Screenshot](https://github.com/Kane-ouvic/Mini-games_RL/blob/main/Results/tetris.png)
+
 ---
 
 ## **Features**
