@@ -1,6 +1,6 @@
 # **Mini-Games_RL**
 
-A brief description of your project, highlighting its purpose and functionality.
+A reinforcement learning (RL) project focused on training AI agents to play classic games. The project uses **Deep Q-Networks (DQN)** to train an agent for playing Mario and implements **both DQN and Policy Gradient methods** to train an agent for Tetris. The goal is to explore different RL approaches and compare their effectiveness in learning complex game strategies.
 
 ---
 
@@ -11,30 +11,26 @@ A brief description of your project, highlighting its purpose and functionality.
 - [Installation](#installation)
 - [Usage](#usage)
 - [File Structure](#file-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-- [Media](#media)
 
 ---
 
 ## **Introduction**
 
-Explain the project's purpose, background, and the problem it solves. Include key objectives or goals.
+This project aims to train reinforcement learning models to play two popular games: **Super Mario Bros.** and **Tetris**. Using RL techniques, the models learn to maximize their scores through trial and error.
 
-Example:
+* **Mario AI**: Uses Deep Q-Networks (DQN) to train an agent to navigate the game world efficiently.
+* **Tetris AI**: Implements both **DQN** and **Policy Gradient** methods to compare performance and strategy formation.
 
-> This project is a web-based tool designed to help users analyze data efficiently. It features a user-friendly interface, robust performance, and seamless integration with other tools.
+The project helps in understanding the effectiveness of different RL techniques for decision-making in sequential game environments.
 
 ---
 
 ## **Features**
 
-List the key features or highlights of your project.
-
-- Feature 1: Description
-- Feature 2: Description
-- Feature 3: Description
+* **Mario AI with DQN**: Uses a deep Q-learning algorithm to train an AI agent to play Mario.
+* **Tetris AI with DQN and Policy Gradient**: Trains two different models for Tetris using DQN and Policy Gradient, enabling performance comparisons.
+* **Custom Training Pipelines**: Implements training loops, reward functions, and environment preprocessing for effective learning.
+* **Inference & Evaluation**: Allows running trained models to test their performance on unseen game scenarios.
 
 ---
 
@@ -43,33 +39,53 @@ List the key features or highlights of your project.
 Step-by-step guide on how to set up the project.
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/project-name.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd project-name
-   ```
-3. Install the dependencies:
+2. Install the dependencies:
    ```bash
    pip install -r requirements.txt
-   ```
-4. Start the application:
-   ```bash
-   python app.py
    ```
 
 ---
 
 ## **Usage**
 
-Provide examples or instructions on how to use the project.
+### **Training**
 
-```python
-from project_name import AwesomeTool
+Train the Mario model using DQN:
 
-tool = AwesomeTool()
-tool.run_analysis(data="input.csv")
+```bash
+python mario/run.py
+```
+
+Train the Tetris model using DQN:
+
+```bash
+python tetris/run.py
+```
+
+Train the Tetris model using Policy Gradient:
+
+```bash
+python tetris/run_pg.py
+```
+
+### **Inference**
+
+Run the trained Mario model:
+
+```bash
+python mario/eval.py
+```
+
+Run the trained Tetris model (DQN):
+
+```bash
+python tetris/eval.py
+```
+
+Run the trained Tetris model (Policy Gradient):
+
+```bash
+python tetris/eval_pg.py
 ```
 
 ---
@@ -79,65 +95,25 @@ tool.run_analysis(data="input.csv")
 Describe the project's directory and file layout.
 
 ```plaintext
-project-name/
-├── src/                # Source code
-├── tests/              # Unit tests
-├── docs/               # Documentation
-├── requirements.txt    # Dependencies
-├── README.md           # Project documentation
+mini-games-rl/
+├── results/              # Inference results (saved models, logs, evaluation results)
+├── mario/                # Training and inference code for Mario
+├── tetris/               # Training and inference code for Tetris
+├── requirements.txt      # Dependencies
+├── README.md             # Project documentation
 ```
 
 ---
 
-## **Contributing**
+## **Future Work**
 
-Guidelines for contributing to the project.
+* Fine-tuning hyperparameters for better performance.
+* Implementing additional RL techniques such as PPO or A2C.
+* Expanding the project to other classic games.
 
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add feature description"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request.
-
----
-
-## **License**
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
----
-
-## **Contact**
-
-Provide contact details for questions or support.
-
-- **Email**: your.email@example.com
-- **GitHub**: [your-username](https://github.com/your-username)
-- **LinkedIn**: [Your Name](https://linkedin.com/in/your-name)
-
----
-
-## **Media**
-
-Include images or videos to showcase your project.
+This project is a great way to learn about reinforcement learning in gaming applications while experimenting with different algorithms. 🚀
 
 ### Example Image
 
 ![Example Screenshot](https://github.com/Kane-ouvic/CARLA_Segmentation/blob/main/result/imgs/1.png)
-
-### Example Video
-
-[![Example Video](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ "Example Video")
-
-- Replace the image URL with the path to your image file or an external URL.
-- Replace the YouTube link with your project's video demonstration URL.
 

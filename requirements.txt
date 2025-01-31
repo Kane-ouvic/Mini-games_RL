@@ -1,0 +1,12 @@
+torch==2.1.0
+torchvision==0.16.0
+numpy==1.23.5
+gym==0.26.2
+gym-super-mario-bros==7.4.0
+nes-py==8.2.1
+matplotlib==3.8.0
+tqdm==4.66.1
+opencv-python==4.8.0.76
+pygame==2.5.0
+tensorflow==2.14.0
+scipy==1.11.3
